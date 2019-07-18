@@ -20,13 +20,17 @@ const Memo = loader.database.define('memos', {
     type: Sequelize.STRING,
     allowNull: false
   },
-  genre: {
+  // genre: {
+  //   type: Sequelize.STRING,
+  //   allowNull: false
+  // },
+  // isPricedown: {
+  //   type: Sequelize.BOOLEAN,
+  //   allowNull: false
+  // },
+  remarks: {
     type: Sequelize.STRING,
-    allowNull: false
-  },
-  isPricedown: {
-    type: Sequelize.BOOLEAN,
-    allowNull: false
+    allowNull: true
   },
   updatedAt: {
     type: Sequelize.DATE,
