@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  form(method="post", action="/memos")
+    div
+      h5 商品名
+      input(type="text" name="productName")
+    div
+      h5 値段
+      input(type="number" name="price")
+    div
+      h5 購入店舗
+      input(type="text" name="shopName")
+    div
+      h5 備考（セールやクーポン使用など）
+      input(type="text" name="remarks")
+    button(type="submit") メモをつくる
