@@ -32,6 +32,10 @@ const Memo = loader.database.define('memos', {
     type: Sequelize.STRING,
     allowNull: true
   },
+  createdBy: {
+    type: Sequelize.INTEGER,
+    allowNull: false
+  },
   updatedAt: {
     type: Sequelize.DATE,
     allowNull: false
